@@ -76,6 +76,12 @@ li a:hover{
     background-color: #9e9e9e;
 }
 
+#tamlogo {
+  width: 100px;
+  height: 100px;
+  margin-left: 60px;
+}
+
 /*CONTEUDO INDEX*/
 
 #context {
