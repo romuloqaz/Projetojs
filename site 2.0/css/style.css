@@ -14,24 +14,24 @@ body {
 
 /*HEADER*/
 nav {
-    background: url("../img/fundo.jpg");
+    background-color: #FFCC00;
     z-index: 4;
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
     width: 100%;
-    height: 120px;
+    height: 147px;
 
 }
 
-.container {
+/*.container {
     margin-left: auto;
     margin-right: auto;
     max-width: 70em;
     padding-right: 1.618em;
     padding-left: 1.618em;
-}
+}*/
 
 nav .container {
     position: fixed;
@@ -51,8 +51,7 @@ nav .logo {
 nav .nav-wrap {
     position: fixed;
     margin-top: 100px;
-    background: #fff;
-    margin-left: 30%;
+    
     width: auto;
     font-weight: bold;
 }
@@ -205,7 +204,7 @@ h1:first-child{
 
 /*FOOTER */
 footer {
-    background: url("../img/fundo.jpg");
+    background-color:#FFCC00;
     position: absolute;
     margin-top: 30px;
     width:100%;
