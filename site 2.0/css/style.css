@@ -25,16 +25,26 @@ nav {
 
 }
 
-/*.container {
+.container {
     margin-left: auto;
     margin-right: auto;
     max-width: 70em;
     padding-right: 1.618em;
     padding-left: 1.618em;
+}
+
+/* Input */
+
+/*#input {
+  border-radius: 3px;
+  margin-left: 250px;
+  margin-top: 30px;
 }*/
 
 nav .container {
     position: fixed;
+    margin-left: 60px;
+    font-family: arial;
 }
 
 nav .logo {
@@ -51,9 +61,8 @@ nav .logo {
 nav .nav-wrap {
     position: fixed;
     margin-top: 100px;
-    
     width: auto;
-    font-weight: bold;
+    
 }
 
 nav ul, nav ul li { /* seletor pregado*/
@@ -77,7 +86,7 @@ li a:hover{
 #tamlogo {
   width: 100px;
   height: 100px;
-  margin-left: 60px;
+  margin-left: 0px;
 }
 
 /*CONTEUDO INDEX*/
@@ -314,4 +323,5 @@ progress{
 
  h3#h3 {
     color: black;
+    
  }
