@@ -215,7 +215,7 @@ h1:first-child{
   margin-left: 900px;
   margin-top: 200px;
   background-color: white;
-  box-shadow: 20px;
+  border-radius: 6px;
 }
 
 #div2{
@@ -225,6 +225,7 @@ h1:first-child{
   margin-left: 600px;
   margin-top: -370px;
   background-color: white;
+  border-radius: 6px;
 }
 
 #div3{
@@ -234,6 +235,7 @@ h1:first-child{
   margin-left: 300px;
   margin-top: -370px;
   background-color: white;
+  border-radius: 6px;
 }
 
 #div4{
@@ -242,6 +244,7 @@ h1:first-child{
   background-color: ;
   margin-top: -370px;
   background-color: white;
+  border-radius: 6px;
 }
 
 #Geladeira1{
