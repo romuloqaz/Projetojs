@@ -88,6 +88,7 @@ a{
   display: block;
   float: right;
   box-shadow: 0 2px 2px 0 rgba(0,0,0,.08);
+  border: none;
 }
 
 #inputcabecalho{
@@ -206,6 +207,80 @@ h1:first-child{
     text-decoration: underline;
 }
 
+/*DIV´S*/
+#div1{
+  width: 200px;
+  height: 355px;
+  background-color: ;
+  margin-left: 900px;
+  margin-top: 200px;
+  background-color: white;
+  box-shadow: 20px;
+}
+
+#div2{
+  width: 200px;
+  height: 355px;
+  background-color: ;  
+  margin-left: 600px;
+  margin-top: -370px;
+  background-color: white;
+}
+
+#div3{
+  width: 200px;
+  height: 355px;
+  background-color: ;
+  margin-left: 300px;
+  margin-top: -370px;
+  background-color: white;
+}
+
+#div4{
+  width: 200px;
+  height: 355px;
+  background-color: ;
+  margin-top: -370px;
+  background-color: white;
+}
+
+#Geladeira1{
+  width: 100px;
+  height: 170px;
+  margin-left: 50px;
+}
+
+#agaR{
+  width: 180px;
+}
+
+#paragrafosdiv{
+  font-family: arial;
+  margin-left: 15px;
+}
+
+#buttonForm{
+    width: 130px;
+    display: block;
+    border: none;
+    text-align: center;
+    padding: 0 10px;
+    border-radius: 2px;
+    height: 36px;
+    line-height: 36px;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-family: arial;
+    padding-right: 35px;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 8px;
+    color: #fff;
+    transition: .4s;
+    background: url(https://imagebuscape-a.akamaihd.net/material/pu/arrow-go-to-store-new.svg) no-repeat 90% 45% #22b14c;
+    background-size: 8%;
+    margin-left: 30px;
+}
 /*FOOTER */
 footer {
     background-color:#606060;
@@ -253,22 +328,6 @@ footer p{
 
 #img-banner3{
     background: url(../img/sniper/banner.jpg) no-repeat fixed;
-}
-
-#img-banner4{
-    background: url(../img/fifa/banner.jpg) no-repeat fixed;
-}
-
-#img-banner5{
-    background: url(../img/mortal/banner.jpg) no-repeat fixed;
-}
-
-#img-banner6{
-    background: url(../img/surge/banner.jpg) no-repeat fixed;
-}
-
-#img-banner7{
-    background: url(../img/little/banner.jpg) no-repeat fixed;
 }
 
 #img-banner8{
