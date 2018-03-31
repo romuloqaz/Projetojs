@@ -9,7 +9,7 @@
 
 body {
     background-color: #DCDCDC;
-    font-family: 'Special Elite', cursive;
+    
 }
 
 /*HEADER*/
@@ -34,8 +34,6 @@ a{
 
 
 }
-
-
 #FormEntrar{
  position: relative;
  left : 1060px;
@@ -71,7 +69,6 @@ a{
   margin-left: 0px;
   margin-top: 8px;
 
- 
 }
 #botaoinput{
   width: 142px;
@@ -125,7 +122,6 @@ nav .nav-wrap { /*bagulho*/
     position: fixed;
     margin-top: -20px;
     width: auto;
-    
 } 
 
 nav ul, nav ul li { /* seletor pregado*/
@@ -142,10 +138,8 @@ li a{
 
 li a:hover{
     text-decoration: underline;
-    color: 
+    color: red;
 }
-
-
 
 #tamlogo {
   width: 120px;
@@ -161,50 +155,11 @@ li a:hover{
     position: relative;
 }
 
-.imagem {
-    height: 250px;
-    width: 300px;
-    margin-left: 10%;
-    margin-right: 2%;
-    box-shadow: 3px 3px 10px 5px #000;
-    margin-bottom: 50px;
-}
-
-.morph {
-  -webkit-transition: all 0.5s ease;
-     -moz-transition: all 0.5s ease;
-       -o-transition: all 0.5s ease;
-      -ms-transition: all 0.5s ease;
-          transition: all 0.5s ease;
-}
-
-.morph:hover {
-  border-radius: 50%;
-  -webkit-transform: rotate(360deg);
-     -moz-transform: rotate(360deg);
-       -o-transform: rotate(360deg);
-      -ms-transform: rotate(360deg);
-          transform: rotate(360deg);
-}
-
-#filtro:hover {
-    filter:saturate(0.1);
-    -moz-filter:saturate(0.1);
-    -ms-filter:saturate(0.1);
-    -o-filter:saturate(0.1);
-    -webkit-filter:saturate(0.1);
-}
-
-
 #text-context{
     margin-top: 20%;
     text-align: center;
     font-size: 15pt;
     font-family: times;
-}
-
-h1:first-child{
-    text-decoration: underline;
 }
 
 /*DIV´S*/
@@ -284,9 +239,33 @@ h1:first-child{
     background-size: 8%;
     margin-left: 30px;
 }
+.info{
+ font-family: calibri;
+ font-size:10pt;
+ padding: 30px;
+}
+.divrodape{
+  background-color: #69696969;
+  padding: 30px;
+}
+
+ ul {
+list-style-type: none;
+}
+
+
+td h3 {
+  color: white;
+}
+
+li {
+margin-bottom: 10px;
+font-family:calibri;
+}
+
 /*FOOTER */
 footer {
-    background-color:#606060;
+    background-color:#252525;
     position: absolute;
     margin-top: 30px;
     width:100%;
@@ -295,13 +274,13 @@ footer {
 }
 
 #logo-footer{
-    margin-left: 2%;
+    
     max-height: 80px;
     padding-top: 10px;
 }
 
 footer p{
-    text-align: right;
+    text-align: center;
 }
 
 /* jogos */
@@ -372,9 +351,3 @@ progress{
     height: 40px;
 }
 
-/* seletor pregado*/
-
- h3#h3 {
-    color: black;
-    
- }
