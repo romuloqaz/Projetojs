@@ -27,18 +27,33 @@ nav {
 }
 
 a{
-  color: #606060;
+  color: #959595;;
   font-family: calibri;
-  font-size: 12pt;
+  font-size: 10.5pt;
   text-decoration: none;
 
 
+}
+#lifooter:hover{
+  text-decoration: none;
+  color: #fff;
+  transition: .4s ease;
+  
 }
 #FormEntrar{
  position: relative;
  left : 1060px;
  top: -45px;
  margin-top: 20px;
+}
+
+#redessociais:hover{
+    transition: color .2s;
+    transition-property: color;
+    transition-duration: 0.2s;
+    transition-timing-function: initial;
+    transition-delay: initial;
+    color: #3b3b3b;
 }
 
 .filtro:hover{
@@ -138,7 +153,7 @@ li a{
 
 li a:hover{
     text-decoration: underline;
-    color: red;
+    
 }
 
 #tamlogo {
@@ -163,6 +178,17 @@ li a:hover{
 }
 
 /*DIV´S*/
+
+#textoprincipal{
+  margin-top: 150px;
+  margin-left: 40px;
+  font-size: 14px;
+  font-weight: 100;
+  line-height: 1.25;
+  color: #444;
+  font-family: calibri;
+}
+
 #div1{
   width: 200px;
   height: 355px;
@@ -202,12 +228,58 @@ li a:hover{
   border-radius: 6px;
 }
 
+/*INDEX*/
+
 #Geladeira1{
   width: 100px;
   height: 170px;
   margin-left: 50px;
 }
 
+#Celularindex{
+  width: 150px;
+  height: 160px;
+  margin-left: 20px;
+}
+
+#tvindex{
+  width: 150px;
+  height: 160px;
+  margin-left: 25px;
+}
+
+#notebookindex{
+  width: 150px;
+  height: 160px;
+  margin-left: 20px;
+}
+
+/*Banner*/ 
+
+.mosaic{
+    margin: 20px 0;
+    margin-top: 20px;
+    margin-right: 0px;
+    margin-bottom: 20px;
+    margin-left: 0px;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: cover;
+}
+
+/*.smal-4{
+  width: 33.33333%;
+}*/
+
+#imgeletro{
+  margin-left: 80px;
+}
+
+#imgcamisas{
+  width: 400px;
+  height: 600px;
+  margin-left: 70px;
+}
 #agaR{
   width: 180px;
 }
@@ -238,6 +310,12 @@ li a:hover{
     background: url(https://imagebuscape-a.akamaihd.net/material/pu/arrow-go-to-store-new.svg) no-repeat 90% 45% #22b14c;
     background-size: 8%;
     margin-left: 30px;
+
+}
+
+#linkloja{
+  text-decoration: none;
+  color: #fff;
 }
 .info{
  font-family: calibri;
@@ -247,6 +325,7 @@ li a:hover{
 .divrodape{
   background-color: #69696969;
   padding: 20pt;
+
 }
 
  ul {
@@ -258,6 +337,11 @@ td h3 {
 }
 .tab-rodape{
   width: 20%;
+
+}
+
+ {
+  text-decoration: none;
 }
 
 li {
