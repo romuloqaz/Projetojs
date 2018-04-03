@@ -1,120 +1,306 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="utf-8">
-    <title>Buscapé - Compare Preços e Economize</title>
-    <link rel="stylesheet" href="css/style.css"/>
-    <script type="text/javascript" src="js/jquery.js" ></script>
-    <script type="text/javascript" src="js/script.js" ></script>
-    <script type="text/javascript" src="js/menu.js"></script>
-    <script type="text/javascript" src="js/mascaras.js"></script>
-    <script type="text/javascript" src="js/jquery.mask.min.js"></script>
-    <script type="text/javascript" src="js/cep.js"></script>
+  <meta charset="utf-8">
+  <title>Buscapé - Compare Preços e Economize</title>
+  <link rel="stylesheet" href="css/style.css"/>
+  <script type="text/javascript" src="js/jquery.js" ></script>
+  <script type="text/javascript" src="js/script.js" ></script>
+  <script type="text/javascript" src="js/formulario.js"></script>
 </head>
 <body>
-<div class="header"></div>
-<div id="textoprincipal">
-    <div id="formulario">
-        <form id="cadastro" name="cadastro" method="post">
-            <table width="625" border="0">
-                <tr>
-                    <td width="69">Nome:</td>
-                    <td width="546"><input name="nome" type="text" id="nome" size="70" maxlength="70" />
-                        <span class="style1">*</span>
-                    </td>
-                </tr>
-                <tr>
-                    <td width="69">CPF:</td>
-                    <td align="left">
-                        <input type="text" name="cpf" class="cpf" size="14" maxlength="14" />
-                        <span class="style1">*</span></td>
-                    </td>
-                </tr>
-                <tr>
-                    <td width="69">Endereco:</td>
-                    <td width="546"><input name="rua" type="text" id="rua" size="70" maxlength="70" />
-                        <span class="style1">*</span>
-                    </td>
-                </tr>
-                <tr>
-                    <td width="69">Data de Nascimento:</td>
-                    <td align="left">
-                        <input type="text" name="nascimentz" class="nascimentz" size="10" maxlength="10" />
-                        <span class="style1">*</span></td>
-                    </td>
-                </tr>
-                <tr>
-                    <td width="69">Bairro:</td>
-                    <td width="546"><input name="bairro" type="text" id="bairro" size="70" maxlength="70" />
-                        <span class="style1">*</span>
-                    </td>
-                </tr>
-                <tr>
-                    <td width="69">Numero:</td>
-                    <td width="546"><input name="numero" type="text" id="numero" size="10" maxlength="10" />
-                        <span class="style1">*</span>
-                    </td>
-                </tr>
-                <tr>
-                    <td>Sexo:</td>
-                    <td><select name="sexo" id="sexo">
-                        <option>Selecione</option>
-                        <option value="Masculino">Masculino</option>
-                        <option value="Feminino">Feminino</option>
-                        <option value="Outros">Outros</option>
-                    </select>
-                        <span class="style1">*</span>
-                    </td>
-                </tr>
-                <tr>
-                    <td width="69">Telefone:</td>
-                    <td align="left">
-                        <input type="text" name="telefone" class="telefone" size="14" maxlength="14" />
-                        <span class="style1">*</span></td>
-                    </td>
-                </tr>
-                <tr>
-                    <td width="69">CEP:</td>
-                    <td align="left">
-                        <input name="cep" type="text" id="cep" class="cepz" value="" size="10" maxlength="9"
-                               onblur="pesquisacep(this.value);"/>
-                        <span class="style1">*</span>
-                    </td>
-                </tr>
-                <tr>
-                    <td width="69">RG:</td>
-                    <td align="left">
-                        <input type="text" name="rg" class="rg" size="14" maxlength="14" />
-                        <span class="style1">*</span></td>
-                    </td>
-                </tr>
-                <tr>
-                    <td width="69">Estado:</td>
-                    <td align="left">
-                        <input name="uf" type="text" id="uf" size="2" />
-                        <span class="style1">*</span></td>
-                    </td>
-                </tr>
-                <tr>
-                    <td width="69">Cidade:</td>
-                    <td align="left">
-                        <input name="cidade" type="text" id="cidade" size="40" />
-                        <span class="style1">*</span></td>
-                    </td>
-                </tr>
-                <tr>
-                    <td colspan="2">
-                        <p>
-                            <input name="cadastrar" type="submit" id="cadastrar" value="Concluir meu Cadastro!" />
-                            <input name="limpar" type="reset" id="limpar" value="Limpar Campos preenchidos!" />
-                            <span class="style1">* Campos com * são obrigatórios!</span>
-                        </p>
-                    </td>
-                </tr>
-            </table>
-        </form>
+  <div id="textoprincipal">
+      <h2 id="h2inicial">
+        Informações Pessoais
+        <br>
+        <span id="hramarelo">_____</span>
+      </h2>
     </div>
+    <div>
+    </div>
+  <header>  
+    <nav>
+      <div class="container">
+        <a href="index.html" class="logo"><img src="img/logo.png" id="tamlogo"></a>
+        <div id="divcabecalho"><img id="tamlupa" src="img/lupa.png">
+          <input type="text" id="inputcabecalho" placeholder="Buscar os melhores produtos nas melhores lojas..." title="pesquise aqui">
+          <button id="botaoinput">Buscar</button>
+        </div> 
+        <a class="login-a" href="formulario.html" id="FormEntrar"><img src="img/users.png" class="filtro" id="user"> ENTRAR</a>
+        <div class="nav-wrap">
+          <ul class="nav-left" id="menu">
+            <li class="buttom"><a href="celulares.html" >Celulares</a> 
+              <ul><p>SMARTPHONE</p>
+            <li><a href="galaxy.html">Galaxy</a></li>
+            <li><a href="motog.html">Moto G </a></li>
+        </ul>
+      </li>
+            <li class="buttom"><a href="tveaudio.html" >Tv e Audio</a>
+              <ul><p>SMART TV</p>
+                <li><a href="tvsamsung.html">TV Samsung</a></li>
+              </ul>
+
+
+            </li>
+            <li class="buttom"><a href="eletrodomesticos.html" >Eletrodomesticos</a>
+              <ul><p>ELETRODOMESTICOS</p>
+                <li><a href="geladeira.html">Geladeira/Refrigerador</a></li>
+                <li><a href="fogao.html">Fogão</a></li>
+              </ul>
+            </li>
+            <li class="buttom"><a href="notebook.html" >Notebook</a>
+              <ul><p>NOTEBOOK</p>
+                <li><a href="lenovo.html">LENOVO</a></li>
+              </ul>
+            </li>
+            <li class="buttom"><a href="games.html" >Games</a>
+              <ul><p>GAMES</p>
+                <li><a href="xbox.html">XBOX</a></li>
+              </ul>
+          </ul>
+        </div>
+      </div>
+    <br>
+    </nav>
+  </header>
+<div class="container">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+      <title>CADASTRO DE CLIENTES</title>
+  </head>
+ 
+<body>
+<div id="formulario">
+    <form id="cadastro" name="cadastro" method="post" action="cadastro.php"  onsubmit="return validaCampo(); return false;">
+      <table width="625" border="0">
+        <tr>
+          <td width="69">Nome:</td>
+          <td width="546"><input name="nome" type="text" id="nome" size="70" maxlength="60" class="inputform" placeholder=" Seu Nome" />
+            <span class="style1">*</span></td>
+        </tr>
+        <tr>
+         <td>
+          <label>CPF:</label>
+         </td>
+         <td align="left">
+          <input type="text" name="cpf" size="10" maxlength="15" class="inputform" placeholder=" *** . *** . ***-** ">
+           <span class="style1">*</span></td>
+         </td>
+        </tr>
+        <tr>
+          <td>Sexo:</td>
+          <td><select name="estado" id="estado" class="inputform">
+            <option>Masculino</option>
+            <option>Feminino</option>
+        <tr>
+          <td>Email:</td>
+          <td><input name="email" type="text" id="email" size="30" maxlength="60" class="inputform" placeholder=" n o m e @ d o m i n i o .com"/>
+          <span class="style1">*</span></td>
+        </tr>
+        <tr>
+        <tr>
+          <td>DDD:</td>
+          <td><input name="ddd" type="number" id="ddd" size="4" maxlength="2" class="inputform" placeholder=" ex: (88)" />
+          Telefone:
+            <input name="telefone" type="number" id="telefone" class="inputform" placeholder=" 9 - ********" />
+            <span class="style3">Apenas números</span> </td>
+        </tr>
+        <tr>
+          <td>Endereço:</td>
+          <td><input name="endereco" type="text" id="endereco" size="70" maxlength="70" class="inputform" placeholder=" Seu Endereço" />
+            <span class="style1">*</span></td>
+        </tr>
+        <tr>
+          <td>Cidade:</td>
+          <td><input name="cidade" type="text" id="cidade" maxlength="20" class="inputform" placeholder=" Sua Cidade" />
+            <span class="style1">*</span></td>
+        </tr>
+        <tr>
+          <td>Estado:</td>
+          <td><select name="estado" id="estado" class="inputform">
+            <option>Selecione...</option>
+            <option value="AC">AC</option>
+            <option value="AL">AL</option>
+            <option value="AP">AP</option>
+            <option value="AM">AM</option>
+            <option value="BA">BA</option>
+            <option value="CE">CE</option>
+            <option value="ES">ES</option>
+            <option value="DF">DF</option>
+            <option value="MA">MA</option>
+            <option value="MT">MT</option>
+            <option value="MS">MS</option>
+            <option value="MG">MG</option>
+            <option value="PA">PA</option>
+            <option value="PB">PB</option>
+            <option value="PR">PR</option>
+            <option value="PE">PE</option>
+            <option value="PI">PI</option>
+            <option value="RJ">RJ</option>
+            <option value="RN">RN</option>
+            <option value="RS">RS</option>
+            <option value="RO">RO</option>
+            <option value="RR">RR</option>
+            <option value="SC">SC</option>
+            <option value="SP">SP</option>
+            <option value="SE">SE</option>
+            <option value="TO">TO</option>
+              </select>
+          </td>
+        </tr>
+        <tr>
+          <td>Bairro:</td>
+          <td><input name="bairro" type="text" id="bairro" maxlength="20" class="inputform" placeholder=" Seu Bairro" />
+            <span class="style1">*</span>
+          </td>
+        </tr>
+        <tr>
+          <td>Numero:</td>
+          <td><input name="numero" type="numero" id="numero" maxlength="20" class="inputform" placeholder=" Ex: 204" />
+            <span class="style1">*</span>
+          </td>
+        </tr>
+        <tr>
+          <td>CEP:</td>
+          <td><input name="cep" type="numero" id="cep" maxlength="20" class="inputform" placeholder=" ** . *** - ***" />
+            <span class="style1">*</span>
+          </td>
+        </tr>
+    </table>
+        <div id="divlogin">
+            <h2 id="h2login">
+                Informações de Login
+                <br>
+                <span id="hramarelo">_____</span>
+            </h2>
+        </div>
+    <table width="370" border="0">
+        <tr>
+          <td>Login:</td>
+          <td><input name="login" type="text" id="login" maxlength="12" class="inputform" placeholder=" Email@dominio.com" />
+            <span class="style1">*</span>
+          </td>
+        </tr>
+        <tr>
+        <td>Senha:</td>
+          <td><input name="senha" type="password" id="senha" maxlength="12" class="inputform" placeholder=" ****** " />
+              <span class="style1">*</span>
+          </td>
+        </tr>
+        <td>Foto:</td>
+          <td><input name="senha" type="file" id="senha" maxlength="12"/>
+              <span class="style1">*</span>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2"><input name="news" type="checkbox" id="news" value="ATIVO" checked="checked" />
+              Desejo receber novidades e informações sobre o conteúdo deste site. 
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2"><p>
+            <input name="submit" type="submit" id="cadastrar" value="Concluir meu Cadastro!" />
+           
+     
+              <input name="limpar" type="reset" id="limpar" value="Limpar Campos preenchidos!" />
+             
+     
+              <span class="style1">* Campos com * são obrigatórios!          </span></p>
+          <p>  </p></td>
+        </tr>      
+      </table>
+    </form>
+
+    <!--Mapa-->
+            <h3>Google Map</h3>
+            <div id="map"></div>  <!--Designa uma área da página para o mapa Google.-->
+            
+                                  <!-- O script carrega a API pelo URL especificado. 
+                                  O parâmetro callback executa a função initMap depois que a API é totalmente carregada. 
+                                  O atributo async permite que o navegador continue renderizando o resto da sua página enquanto a API carrega. 
+                                  O parâmetro key contém a sua chave de API.  -->         
+            <script async defer    
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDNjE5_3thxeQFNqiwI02qZyw3h1g3bFds&callback=initMap">
+            </script>
+          
+    </body>
 </div>
-<div class="footer"></div>
+     <hr>
+    </div>
+    <br>
+<footer>
+  <div class="divrodape">
+        <table class="info">
+        <td valign="top" class="tab-rodape">
+          <ul>
+            <li><h3><a href="" id="lifooter" style="color: #fff;">Buscapé</a></h3></li>
+            <li><a href="https://www.buscape.com.br/termos-de-uso"  id="lifooter">Termo de uso</a></li>
+            <li><a href="https://www.buscape.com.br/termos-de-uso"  id="lifooter">Política de Privacidade</a></li>
+            <li><a href="" id="lifooter">Política de troca e devolução</a></li>
+            <li><a href="" id="lifooter">Conheça o Buscapé</a></li>
+            <li><a href="" id="lifooter">Buscapé no Celular</a></li>
+            <li><a href="" id="lifooter">FAQ Buscapé</a></li>
+            <li><a href="" id="lifooter">Trabalhe conosco</a></li>
+            <li><a href="" id="lifooter">Para Desenvolvedores</a></li>
+            <li><a href="" id="lifooter">Mapa do Site</a></li>
+            <li><a href="" id="lifooter">Mapa do site de Conteúdo</a></li>
+          </ul>
+        </td>
+        <td valign="top" class="tab-rodape">
+          <ul>
+            <li><h3><a id="lifooter" style="color: #fff;">Consumidor</a></h3></li>
+            <li><a href="" id="lifooter">Pesquise e avalie uma loja</a></li>
+            <li><a href="" id="lifooter">Lojas não recomendadas</a></li>
+            <li><a href="" id="lifooter">Compre com segurança</a></li>
+            <li><a href="" id="lifooter">Promoções</a></li>
+          </ul>
+        </td>
+        <td valign="top" class="tab-rodape">
+          <ul>
+            <li><h3><a href="" id="lifooter" style="color: #fff;"></a>Empresas</h3></li>
+            <li><a href="" id="lifooter">Anuncie no Buscapé</a></li>
+            <li><a href="" id="lifooter">Atendimento ao Lojista</a></li>
+            <li><a href="" id="lifooter">Programa de Afiliados</a></li>
+          </ul>
+        </td>
+        <td valign="top" style="background-color: #4c4c4c" class="tab-rodape">
+          <ul>
+            <li><h3><a href="" id="lifooter"></a>Atendimento ao consumidor</h3></li>
+            <li><a href="" id="lifooter">Ajuda ao Vivo</a></li>
+            <li><a href="" id="lifooter">Fale Conosco</a></li>
+            <li><a href="" id="lifooter">Telefone: (11) 4003-4340(Segunda à Sábado das 8h às 20h)</a></li>
+            <li><h3><a href="" id="lifooter">Atendimento ao lojista</a></h3></li>
+            <li><a href="" id="lifooter">Email: suportebuscape@buscapecompany.com Telefone: (11) 3848-8700opção 3(Segunda à Quinta das 8:30h às 18h e às Sextas das 8:30h às 16h)</a></li>
+          </ul>
+        </td>
+        <td valign="top" class="tab-rodape">
+          <ul>
+            <li><h3><a href="" id="lifooter" style="color: #fff;">Redes sociais</a></h3></li>
+            <li><a href="https://www.facebook.com/buscape" id="redessociais"><img src="img/facebook.png"></a></li>
+            <li><a href="https://www.twitter.com/buscape" id="redessociais"><img src="img/twitter.png"></a></li>
+            <li><a href="https://www.youtube.com.br/buscape" id="redessociais"><img src="img/youtube.png"></a></li>
+            
+          </ul>
+        </td>
+      </table>
+      <table class="info">
+        <td>
+          <img src="img/selo.png" id="logo-footer">
+        </td>
+        <td>
+          <ul>
+            <li>Apoiamos causas contra a divulgação de materiais ilegais, agressivos, caluniosos, abusivos, difamatórios, discriminatórios, ameaçadores, danosos, invasivos da privacidade de terceiros, terroristas, vulgares, obscenos ou ainda condenáveis de qualquer tipo ou natureza que sejam prejudiciais a menores e à preservação do meio ambiente. Compre com segurança: conheça seus Direitos de Consumidor.</li>
+            <li>BUSCAPÉ COMPANY INFORMAÇÃO E TECNOLOGIA LTDA., com sede na cidade de Santana de Parnaíba, Estado de São Paulo, na Avenida Marte, 489, CEP 06541-005, inscrita no CNPJ/MF sob o nº 09.419.682/0001-46</li>
+            <li>A partir do dia 18/08/2017, o programa Buscapé Te Protege estará suspenso por tempo indeterminado, para mais informações sobre a utilização do site acesse o nosso Termo de Uso</li>
+          </ul>
+        </td>
+      </table>
+      </div>
+    <div class="container" style="padding: 20pt" >
+      <br/>
+      <a href="index.html"><img id="logo-footer" src="img/logo.svg"/></a> Você está no buscapé Brasil
+    </div>
+  </footer>
 </body>
 </html>
+
