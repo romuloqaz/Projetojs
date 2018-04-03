@@ -7,6 +7,8 @@
   <script type="text/javascript" src="js/jquery.js" ></script>
   <script type="text/javascript" src="js/script.js" ></script>
   <script type="text/javascript" src="js/formulario.js"></script>
+  <script type="text/javascript" src="js/cep.js"></script>
+  <script type="text/javascript" src="js/validacoes.js"></script>
 </head>
 <body>
   <div id="textoprincipal">
@@ -165,6 +167,17 @@
           <td><input name="cep" type="numero" id="cep" maxlength="20" class="inputform" placeholder=" ** . *** - ***" />
             <span class="style1">*</span>
           </td>
+        </tr>
+        <tr>
+          <td colspan="2"><p>
+            <input name="submit" type="submit" id="cadastrar" value="Salvar Informações" />
+           
+     
+              <input name="limpar" type="reset" id="limpar" value="Limpar Campos preenchidos!" />
+             
+     
+              <span class="style1">* Campos com * são obrigatórios!          </span></p>
+          <p>  </p></td>
         </tr>
     </table>
         <div id="divlogin">
