@@ -572,3 +572,10 @@ progress{
     height: 40px;
 }
 
+/* style do mapa*/
+
+#map {
+  height: 300px;
+  width: 100%;
+  
+}

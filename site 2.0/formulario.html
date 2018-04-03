@@ -211,6 +211,18 @@
       </table>
     </form>
 
+    <!--Mapa-->
+            <h3>Google Map</h3>
+            <div id="map"></div>  <!--Designa uma área da página para o mapa Google.-->
+            
+                                  <!-- O script carrega a API pelo URL especificado. 
+                                  O parâmetro callback executa a função initMap depois que a API é totalmente carregada. 
+                                  O atributo async permite que o navegador continue renderizando o resto da sua página enquanto a API carrega. 
+                                  O parâmetro key contém a sua chave de API.  -->         
+            <script async defer    
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDNjE5_3thxeQFNqiwI02qZyw3h1g3bFds&callback=initMap">
+            </script>
+          
     </body>
 </div>
      <hr>
