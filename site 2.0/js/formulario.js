@@ -55,15 +55,43 @@ return true;
 
 // javascript referente ao mapa
 
-function initMap() { /* A função initMap inicializa e adiciona o mapa quando a página da Web carrega. S*/
-    var local = {lat: -6.883712399999999, lng: -38.5573006}; /* Longitute e latituade */
+//var latituade;
+//var longitude;
+
+
+
+function initMap() {
+     /* A função initMap inicializa e adiciona o mapa quando a página da Web carrega. S*/
+    
+    var local = {lat:-6.8898741999999995, lng: -38.544510599999995}; /* Longitute e latituade */
     var map = new google.maps.Map(document.getElementById('map'), { /*Adiciona um novo objeto do Google Maps para construir um mapa no elemento div.*/
        zoom: 4,
        center: local  /*A propriedade center informa a API a localização do ponto central do mapa. */
    });
-       var marker = new google.maps.Marker({ /* Adiciona um marcador no mapa e O position propriedade define a posição do marcador.*/
-       position: local,
-       map: map
-   });
+       
+   var infoWindow = new google.maps.InfoWindow({map: map});
+
+    if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(function(position) {
+            var pos = {
+                lat: position.coords.latitude,
+                lng: position.coords.longitude
+            };
+            infoWindow.setPosition(pos);
+            infoWindow.setContent("Localização encontrada");
+            map.setCenter(pos);
+
+            var marker = new google.maps.Marker({ /* Adiciona um marcador no mapa e O position propriedade define a posição do marcador.*/
+                position: pos,
+                map: map
+            });    
+        });
+
+        
+
+    } else {
+        alert("Geolocation is not supported by this browser.");
+    }      
+
 }
-    
+  
