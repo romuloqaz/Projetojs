@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Buscapé - Compare Preços e Economize</title>
+    <link rel="stylesheet" href="css/style.css"/>
+    <script type="text/javascript" src="js/jquery.js" ></script>
+    <script type="text/javascript" src="js/script.js" ></script>
+    <script type="text/javascript" src="js/menu.js"></script>
+    <script type="text/javascript" src="js/mascaras.js"></script>
+    <script type="text/javascript" src="js/jquery.mask.min.js"></script>
+    <script type="text/javascript" src="js/cep.js"></script>
+</head>
+<body>
+<div class="header"></div>
+<div id="textoprincipal">
+    <div id="formulario">
+        <form id="cadastro" name="cadastro" method="post">
+            <table width="625" border="0">
+                <tr>
+                    <td width="69">Nome:</td>
+                    <td width="546"><input name="nome" type="text" id="nome" size="70" maxlength="70" />
+                        <span class="style1">*</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td width="69">CPF:</td>
+                    <td align="left">
+                        <input type="text" name="cpf" class="cpf" size="14" maxlength="14" />
+                        <span class="style1">*</span></td>
+                    </td>
+                </tr>
+                <tr>
+                    <td width="69">Endereco:</td>
+                    <td width="546"><input name="rua" type="text" id="rua" size="70" maxlength="70" />
+                        <span class="style1">*</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td width="69">Data de Nascimento:</td>
+                    <td align="left">
+                        <input type="text" name="nascimentz" class="nascimentz" size="10" maxlength="10" />
+                        <span class="style1">*</span></td>
+                    </td>
+                </tr>
+                <tr>
+                    <td width="69">Bairro:</td>
+                    <td width="546"><input name="bairro" type="text" id="bairro" size="70" maxlength="70" />
+                        <span class="style1">*</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td width="69">Numero:</td>
+                    <td width="546"><input name="numero" type="text" id="numero" size="10" maxlength="10" />
+                        <span class="style1">*</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Sexo:</td>
+                    <td><select name="sexo" id="sexo">
+                        <option>Selecione</option>
+                        <option value="Masculino">Masculino</option>
+                        <option value="Feminino">Feminino</option>
+                        <option value="Outros">Outros</option>
+                    </select>
+                        <span class="style1">*</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td width="69">Telefone:</td>
+                    <td align="left">
+                        <input type="text" name="telefone" class="telefone" size="14" maxlength="14" />
+                        <span class="style1">*</span></td>
+                    </td>
+                </tr>
+                <tr>
+                    <td width="69">CEP:</td>
+                    <td align="left">
+                        <input name="cep" type="text" id="cep" class="cepz" value="" size="10" maxlength="9"
+                               onblur="pesquisacep(this.value);"/>
+                        <span class="style1">*</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td width="69">RG:</td>
+                    <td align="left">
+                        <input type="text" name="rg" class="rg" size="14" maxlength="14" />
+                        <span class="style1">*</span></td>
+                    </td>
+                </tr>
+                <tr>
+                    <td width="69">Estado:</td>
+                    <td align="left">
+                        <input name="uf" type="text" id="uf" size="2" />
+                        <span class="style1">*</span></td>
+                    </td>
+                </tr>
+                <tr>
+                    <td width="69">Cidade:</td>
+                    <td align="left">
+                        <input name="cidade" type="text" id="cidade" size="40" />
+                        <span class="style1">*</span></td>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <p>
+                            <input name="cadastrar" type="submit" id="cadastrar" value="Concluir meu Cadastro!" />
+                            <input name="limpar" type="reset" id="limpar" value="Limpar Campos preenchidos!" />
+                            <span class="style1">* Campos com * são obrigatórios!</span>
+                        </p>
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+</div>
+<div class="footer"></div>
+</body>
+</html>
