@@ -34,6 +34,19 @@ a{
 
 
 }
+
+#formulario{
+  font-family: arial;
+  color: black;
+}
+.style1 {
+color: #FF0000;
+font-size: x-small;
+}
+
+.style3 {color: #0000FF; font-size: x-small; }
+
+
 #lifooter:hover{
   text-decoration: none;
   color: #fff;

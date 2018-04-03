@@ -10,7 +10,7 @@
 <body>
   <div id="textoprincipal">
       <h2 id="h2inicial">
-        OS MELHORES PREÇOS PARA VOCÊ!
+        CADASTRE-SE E FAÇA LOGIN
         <br>
         <span id="hramarelo">_____</span>
       </h2>
@@ -57,72 +57,150 @@
                 <li><a href="xbox.html">XBOX</a></li>
               </ul>
           </ul>
+        </div>
       </div>
     <br>
     </nav>
   </header>
-    <div class="container">
-     <section id="sessao">
-      <div id="div1">
-        <img src="https://thumbs.buscape.com.br/fogao/consul-dupla-chama-cfs5vat-piso-5-bocas-titanium_200x200-PU9a167_1.jpg" id="Celularindex">
-        <hr id="agaR">
-        <p id="paragrafosdiv">Consul Dupla chama CFS5VAT piso 5 bocas titanium</p>
-        <span id="paragrafosdiv">R$ 1.599,00</span><br>
-        <span id="paragrafosdiv">12x de R$ 133,90 s/ juros</span><br><br>
-        <span><a href="https://www.pontofrio.com.br/Eletrodomesticos/Fogoes/Piso5Bocas/fogao-consul-5-bocas-cfs5vat-com-mesa-de-vidro-dupla-chama-titanium-11488711.html?utm_source=buscape&utm_medium=comparadorpreco&utm_content=11488711&cm_mmc=buscape_XML-_-ELDO-_-Comparador-_-11488711" id="linkloja"><button id="buttonForm">IR Á LOJA</button></a>
-      </div><br>
-      <div id="div2">
-        <img src="https://thumbs.buscape.com.br/geladeira-refrigerador/refrigerador-brastemp-inverse-maxi-bre80ak-573-litros-inox_200x200-PU968ed_1.jpg" id="Celularindex">
-        <hr id="agaR">
-        <p id="paragrafosdiv">Refrigerador Brastemp inverse maxi BRE80AK 573 litros Inox</p>
-        <span id="paragrafosdiv">R$ 3.889,10</span><br>
-        <span id="paragrafosdiv">12x de R$ 329,90 s/ juros</span><br><br>
-        <span><a href="https://www.casasbahia.com.br/Eletrodomesticos/GeladeiraeRefrigerador/2Portas/refrigerador-brastemp-side-inverse-bre80ak-frost-free-maxi-evox-573-l-6346452.html?utm_source=buscape&utm_medium=comparadorpreco&utm_content=6346452&cm_mmc=buscape_XML-_-ELDO-_-Comparador-_-6346452" id="linkloja"><button id="buttonForm">IR Á LOJA</button></a>
-      </div><br>
-      <div id="div3">
-        <img src="https://thumbs.buscape.com.br/maquina-de-lavar-roupas/samsung-seine-wf106u4sawq-frontal-10-1-kg-branco_200x200-PU7ce55_1.jpg" id="Celularindex">
-        <hr id="agaR">
-        <p id="paragrafosdiv">Samsung Seine wFI6U4ASWQ Frontal 10,1 Kg branco</p>
-        <span id="paragrafosdiv">R$ 1.899,10</span><br>
-        <span id="paragrafosdiv">12x de R$ 133,25 s/ juros</span><br><br>
-        <span><a href="https://www.magazineluiza.com.br/lavadora-de-roupas-samsung-wf106u4sawq-az-101kg-painel-led/p/2029847/ed/lava/?partner_id=10427&utm_source=buscape&utm_medium=comparadores&utm_content=ed&utm_campaign=bust&tkSource=buscape&tkOffer=32b7870e-d0c2-4115-aa3f-8211c6dde4da&dLog=20180402002224" id="linkloja"><button id="buttonForm">IR Á LOJA</button></a>
-      </div><br>
-      <div id="div4">
-      
-        <img src="https://thumbs.buscape.com.br/ar-condicionado/lg-libero-e-us-q092wsg3-split-high-wall-9000-btus-frio_200x200-PU935b4_1.jpg" id="Celularindex">
-        <hr id="agaR">
-        <p id="paragrafosdiv">LG libero E+ US-QW89WSCG2 Split higt Wall 9000 BTUs frio </p>
-        <span id="paragrafosdiv">R$ 1.363,44</span><br>
-        <span id="paragrafosdiv">10x de R$ 144,80 s/ juros</span><br><br>
-        <span><a href="http://www.centralar.com.br/ar-condicionado-split-libero-e-smart-inverter-lg-9000-btus-frio-220v-usnq092wsg3.html?utm_source=buscape&utm_medium=cpc&tkSource=buscape&tkOffer=196de37d-4525-449a-933c-23d4a94ba224&dLog=20180402001824" id="linkloja"><button id="buttonForm">IR Á LOJA</button></a>
-      </div><br>
-     </section>
+<div class="container">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+      <title>CADASTRO DE CLIENTES COM BANCO DE DADOS E PHP</title>
+  </head>
+ 
+<body>
+<div id="formulario">
+    <form id="cadastro" name="cadastro" method="post" action="cadastro.php" onsubmit="return validaCampo(); return false;">
+      <table width="625" border="0">
+        <tr>
+          <td width="69">Nome:</td>
+          <td width="546"><input name="nome" type="text" id="nome" size="70" maxlength="60" />
+            <span class="style1">*</span></td>
+        </tr>
+        <tr>
+         <td>
+          <label>CPF:</label>
+         </td>
+         <td align="left">
+          <input type="text" name="cpf" size="9" maxlength="9"> - <input type="text" name="cpf2" size="2" maxlength="2">
+         </td>
+        </tr>
+        <tr>
+          <td>Email:</td>
+          <td><input name="email" type="text" id="email" size="70" maxlength="60" />
+          <span class="style1">*</span></td>
+        </tr>
+        <tr>
+          <td>Sexo:</td>
+          <td><input name="sexo" type="radio" value="Masculino" checked="checked" />
+            Masculino
+            <input name="sexo" type="radio" value="Feminino" />
+            Feminino <span class="style1">*</span> </td>
+        </tr>
+        <tr>
+          <td>DDD:</td>
+          <td><input name="ddd" type="text" id="ddd" size="4" maxlength="2" />
+          Telefone:
+            <input name="telefone" type="text" id="telefone" />
+            <span class="style3">Apenas números</span> </td>
+        </tr>
+        <tr>
+          <td>Endereço:</td>
+          <td><input name="endereco" type="text" id="endereco" size="70" maxlength="70" />
+            <span class="style1">*</span></td>
+        </tr>
+        <tr>
+          <td>Cidade:</td>
+          <td><input name="cidade" type="text" id="cidade" maxlength="20" />
+            <span class="style1">*</span></td>
+        </tr>
+        <tr>
+          <td>Estado:</td>
+          <td><select name="estado" id="estado">
+            <option>Selecione...</option>
+            <option value="AC">AC</option>
+            <option value="AL">AL</option>
+            <option value="AP">AP</option>
+            <option value="AM">AM</option>
+            <option value="BA">BA</option>
+            <option value="CE">CE</option>
+            <option value="ES">ES</option>
+            <option value="DF">DF</option>
+            <option value="MA">MA</option>
+            <option value="MT">MT</option>
+            <option value="MS">MS</option>
+            <option value="MG">MG</option>
+            <option value="PA">PA</option>
+            <option value="PB">PB</option>
+            <option value="PR">PR</option>
+            <option value="PE">PE</option>
+            <option value="PI">PI</option>
+            <option value="RJ">RJ</option>
+            <option value="RN">RN</option>
+            <option value="RS">RS</option>
+            <option value="RO">RO</option>
+            <option value="RR">RR</option>
+            <option value="SC">SC</option>
+            <option value="SP">SP</option>
+            <option value="SE">SE</option>
+            <option value="TO">TO</option>
+              </select>
+            <span class="style1">*      </span>
+          </td>
+        </tr>
+        <tr>
+          <td>Bairro:</td>
+          <td><input name="bairro" type="text" id="bairro" maxlength="20" />
+            <span class="style1">*</span>
+          </td>
+        </tr>
+        <tr>
+          <td>Numero:</td>
+          <td><input name="numero" type="numero" id="numero" maxlength="20" />
+            <span class="style1">*</span>
+          </td>
+        </tr>
+        <tr>
+          <td>CEP:</td>
+          <td><input name="cep" type="numero" id="cep" maxlength="20" />
+            <span class="style1">*</span>
+          </td>
+        </tr>
+        <tr>
+          <td>Login:</td>
+          <td><input name="login" type="text" id="login" maxlength="12" />
+            <span class="style1">*</span>
+          </td>
+        </tr>
+        <tr>
+          <td>Senha:</td>
+          <td><input name="senha" type="password" id="senha" maxlength="12" />
+              <span class="style1">*</span>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2"><input name="news" type="checkbox" id="news" value="ATIVO" checked="checked" />
+              Desejo receber novidades e informações sobre o conteúdo deste site. 
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2"><p>
+            <input name="cadastrar" type="submit" id="cadastrar" value="Concluir meu Cadastro!" />
+           
+     
+              <input name="limpar" type="reset" id="limpar" value="Limpar Campos preenchidos!" />
+             
+     
+              <span class="style1">* Campos com * são obrigatórios!          </span></p>
+          <p>  </p></td>
+        </tr>
+      </table>
+    </form>
+    </body>
+</div>
      <hr>
     </div>
     <br>
-    <h2 id="h2prebanner">
-      CONFIRA TAMBEM 
-      <span id="vejamaisofertas">Veja mais Ofertas !</span>
-      <br>
-      <span id="hramarelo">______</span>
-
-    </h2>
-    <br>
-    <div style="background-image: url(https://imagebuscape-a.akamaihd.net/material/mosaicBanners/20180326/mosaico_bg-desktop-min.jpg);" class="mosaic">
-      <div class="smal-4">
-        <div>
-          <a href="https://www.buscape.com.br/especial/ofertas-eletrodomesticos">
-            <img src="https://imagebuscape-a.akamaihd.net/material/mosaicBanners/20180323/mosaico-img001-desktop-min.png" id="imgeletro">
-          </a>
-          <a href="https://www.buscape.com.br/redirect_prod?id=6525&prod_id=256512344&emp_id=54189&pos=0&pg=prod_unico&cn=0&nc=12700120161031105552&az=9d847f29dafc0b1b9e4de8a43bb1627c">
-            <img src="https://imagebuscape-a.akamaihd.net/material/mosaicBanners/20180326/mosaico_02-desktop-min.png">
-          </a>
-          <a href="https://www.buscape.com.br/especial/ofertas-produtos-para-cozinha">
-            <img src="https://imagebuscape-a.akamaihd.net/material/mosaicBanners/20180326/mosaico_chef_desktop-min.png">
-          </a>
-        </div>
-
-
 <footer>
   <div class="divrodape">
         <table class="info">
