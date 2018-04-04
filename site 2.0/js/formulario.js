@@ -84,6 +84,7 @@ function login(){
     if(usuario!=null){							// Verifica se o USUARIO existe
         usuario = usuario.split(',');        	// Se existir : como no vetor e separado por virgula SPLIT separa em duas posicoes (0,1) referente a EMAIL e SENHA
         verificarChave(usuario);				// Chama a Funcao de verificar se a senha está correta
+                                                ///
     }else{
         alert("Usuario não cadastrado");
         login();
