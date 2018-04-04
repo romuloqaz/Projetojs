@@ -1,55 +1,55 @@
 
-function validaCampo()
-{
-if(document.cadastro.nome.value=="")
-{
-alert("O Campo nome é obrigatório!");
-return false;
-}
-else
-if(document.cadastro.email.value=="")
-{
-alert("O Campo email é obrigatório!");
-return false;
-}
-if(document.cadastro.cpf.value=="")
-{
-alert("O Campo CPF é obrigatório!");
-return false;
-}
-else
-if(document.cadastro.endereco.value=="")
-{
-alert("O Campo endereço é obrigatório!");
-return false;
-}
-else
-if(document.cadastro.bairro.value=="")
-{
-alert("O Campo Bairro é obrigatório!");
-return false;
-}
-else
-if(document.cadastro.pais.value=="")
-{
-alert("O Campo país é obrigatório!");
-return false;
-}
-else
-if(document.cadastro.login.value=="")
-{
-alert("O Campo Login é obrigatório!");
-return false;
-}
-else
-if(document.cadastro.senha.value=="")
-{
-alert("Digite uma senha!");
-return false;
-}
-else
-return true;
-}
+// function validaCampo()
+// {
+// if(document.cadastro.nome.value=="")
+// {
+// alert("O Campo nome é obrigatório!");
+// return false;
+// }
+// else
+// if(document.cadastro.email.value=="")
+// {
+// alert("O Campo email é obrigatório!");
+// return false;
+// }
+// if(document.cadastro.cpf.value=="")
+// {
+// alert("O Campo CPF é obrigatório!");
+// return false;
+// }
+// else
+// if(document.cadastro.endereco.value=="")
+// {
+// alert("O Campo endereço é obrigatório!");
+// return false;
+// }
+// else
+// if(document.cadastro.bairro.value=="")
+// {
+// alert("O Campo Bairro é obrigatório!");
+// return false;
+// }
+// else
+// if(document.cadastro.pais.value=="")
+// {
+// alert("O Campo país é obrigatório!");
+// return false;
+// }
+// else
+// if(document.cadastro.login.value=="")
+// {
+// alert("O Campo Login é obrigatório!");
+// return false;
+// }
+// else
+// if(document.cadastro.senha.value=="")
+// {
+// alert("Digite uma senha!");
+// return false;
+// }
+// else
+// return true;
+// }
 // <!-- Fim do JavaScript que validará os campos obrigatórios! -->
 
 
@@ -93,5 +93,58 @@ function initMap() {
         alert("Geolocation is not supported by this browser.");
     }      
 
+}
+
+
+
+// ARMAZENAMENTO
+
+function verificarCadastro(){
+    var nome_Usuario = document.getElementById('nome').value;
+    var cpf_Usuario = document.getElementById('cpf').value;
+    var rua_Usuario = document.getElementById('rua').value;
+    var data_Nasc_Usuario = document.getElementById('data').value;
+    var bairro_Usuario = document.getElementById('bairro').value;
+    var numero_Usuario = document.getElementById('numero_casa').value;
+    var telefone_Usuario = document.getElementById('telefone').value;
+    var cep_Usuario = document.getElementById('cep').value;
+    var rg_Usuario = document.getElementById('rg').value;
+    var email_Usuario = document.getElementById('email').value;
+    var senha_Usuario = document.getElementById('senha').value;
+    var foto_Usuario = document.getElementById('foto_perfil').value;
+    if((nome_Usuario != "") && (cpf_Usuario!="") && (rua_Usuario!="") && (data_Nasc_Usuario!="") && (bairro_Usuario!="")&&(numero_Usuario!="")&&(telefone_Usuario!="")&&(cep_Usuario!="")&&(rg_Usuario!="")&&(email_Usuario!="")&&(senha_Usuario!="")){
+        armazenarDados(email_Usuario,senha_Usuario);
+    }else{
+        alert("Campos necessários não foram preenchidos");
+    }
+}
+
+function armazenarDados(email_Usuario,senha_Usuario){
+    var info = [email_Usuario,senha_Usuario];
+    localStorage.setItem(email_Usuario,info);
+    console.log(localStorage.getItem(email_Usuario));
+}
+
+function verificarChave(usuario){
+    var senha = prompt("Digite sua senha");
+    console.log(usuario);
+    if(senha == usuario[1]){
+        alert("Usuario logado");
+    }else{
+        alert("Senha incorreta");
+        verificarChave(usuario);
+    }
+}
+
+function login(){
+    var chave = prompt("Digite seu email");
+    var usuario = localStorage.getItem(chave);
+    if(usuario!=null){
+        usuario = usuario.split(',');        
+        verificarChave(usuario);
+    }else{
+        alert("Usuario não cadastrado");
+        login();
+    }
 }
   

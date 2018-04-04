@@ -7,8 +7,6 @@
   <script type="text/javascript" src="js/jquery.js" ></script>
   <script type="text/javascript" src="js/script.js" ></script>
   <script type="text/javascript" src="js/formulario.js"></script>
-  <script type="text/javascript" src="js/cep.js"></script>
-  <script type="text/javascript" src="js/validacoes.js"></script>
 </head>
 <body>
   <div id="textoprincipal">
@@ -73,7 +71,7 @@
  
 <body>
 <div id="formulario">
-    <form id="cadastro" name="cadastro" method="post" action="cadastro.php"  onsubmit="return validaCampo(); return false;">
+    <form id="cadastro" >
       <table width="625" border="0">
         <tr>
           <td width="69">Nome:</td>
@@ -85,7 +83,25 @@
           <label>CPF:</label>
          </td>
          <td align="left">
-          <input type="text" name="cpf" size="10" maxlength="15" class="inputform" placeholder=" *** . *** . ***-** ">
+          <input type="text" name="cpf" id="cpf" size="10" maxlength="15" class="inputform" placeholder=" *** . *** . ***-** ">
+           <span class="style1">*</span></td>
+         </td>
+        </tr>
+        <tr>
+         <td>
+          <label>RG:</label>
+         </td>
+         <td align="left">
+          <input type="text" name="rg"  id="rg" size="10" maxlength="15" class="inputform">
+           <span class="style1">*</span></td>
+         </td>
+        </tr>
+        <tr>
+         <td>
+          <label>Data Nascimento:</label>
+         </td>
+         <td align="left">
+          <input type="date" name="date" size="10" id="data" class="inputform">
            <span class="style1">*</span></td>
          </td>
         </tr>
@@ -157,8 +173,14 @@
           </td>
         </tr>
         <tr>
+          <td>Rua:</td>
+          <td><input name="rua" type="text" id="rua" maxlength="20" class="inputform" placeholder=" Sua Rua" />
+            <span class="style1">*</span>
+          </td>
+        </tr>
+        <tr>
           <td>Numero:</td>
-          <td><input name="numero" type="numero" id="numero" maxlength="20" class="inputform" placeholder=" Ex: 204" />
+          <td><input name="numero" type="numero" id="numero_casa" maxlength="20" class="inputform" placeholder=" Ex: 204" />
             <span class="style1">*</span>
           </td>
         </tr>
@@ -167,17 +189,6 @@
           <td><input name="cep" type="numero" id="cep" maxlength="20" class="inputform" placeholder=" ** . *** - ***" />
             <span class="style1">*</span>
           </td>
-        </tr>
-        <tr>
-          <td colspan="2"><p>
-            <input name="submit" type="submit" id="cadastrar" value="Salvar Informações" />
-           
-     
-              <input name="limpar" type="reset" id="limpar" value="Limpar Campos preenchidos!" />
-             
-     
-              <span class="style1">* Campos com * são obrigatórios!          </span></p>
-          <p>  </p></td>
         </tr>
     </table>
         <div id="divlogin">
@@ -201,7 +212,7 @@
           </td>
         </tr>
         <td>Foto:</td>
-          <td><input name="senha" type="file" id="senha" maxlength="12"/>
+          <td><input name="foto_perfil" type="file" id="foto_perfil" maxlength="12"/>
               <span class="style1">*</span>
           </td>
         </tr>
@@ -212,7 +223,7 @@
         </tr>
         <tr>
           <td colspan="2"><p>
-            <input name="submit" type="submit" id="cadastrar" value="Concluir meu Cadastro!" />
+            <input name="submit" type="submit" id="cadastrar" value="ENVIAR" onclick="verificarCadastro()" />
            
      
               <input name="limpar" type="reset" id="limpar" value="Limpar Campos preenchidos!" />
