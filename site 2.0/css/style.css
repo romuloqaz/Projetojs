@@ -585,3 +585,21 @@ progress{
       width: 70px;
       height: 70px;
     }
+
+    /*Slide show*/
+
+    *{
+      margin: 0;
+      padding: 0;
+  }
+  
+  
+  
+  .slides{
+      margin-left: 250px;
+     
+  }
+  
+  .slides ul li{
+      list-style-type: none;
+  }

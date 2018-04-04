@@ -13,6 +13,14 @@ $(document).ready(function(){
 	);
 
 });
+/*Codido do slide show*/
 
+$(document).ready(function(){
+    $(".slides ul").cycle({
+        fx: 'fade',
+        speed: 2000,
+        timeout:300,
+    });
+});
 
 
