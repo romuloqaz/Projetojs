@@ -7,6 +7,9 @@
   <link rel="stylesheet" href="css/style.css"/>
   <script type="text/javascript" src="js/jquery.js" ></script>
   <script type="text/javascript" src="js/script.js" ></script>
+  <script type="text/javascript" src="js/jquery.mask.min.js"></script>
+  <script type="text/javascript" src="js/mascaras.js"></script>
+  <script type="text/javascript" src="js/cep.js"></script>
   <script type="text/javascript" src="js/formulario.js"></script>
 </head>
 <body>
@@ -77,7 +80,7 @@
       <table width="625" border="0">
         <tr>
           <td width="69">Nome:</td>
-          <td width="546"><input name="nome" type="text" id="nome" size="70" maxlength="60" class="inputform" placeholder=" Seu Nome" />
+          <td width="546"><input name="nome" type="text" id="nome" size="70" maxlength="60" class="" placeholder=" Seu Nome" />
             <span class="style1">*</span></td>
         </tr>
         <tr>
@@ -85,7 +88,7 @@
           <label>CPF:</label>
          </td>
          <td align="left">
-          <input type="text" name="cpf" id="cpf" size="10" maxlength="15" class="inputform" placeholder=" *** . *** . ***-** ">
+          <input type="text" name="cpf" id="cpf" size="15" maxlength="15" class="cpf" placeholder=" *** . *** . ***-** ">
            <span class="style1">*</span></td>
          </td>
         </tr>
@@ -94,7 +97,7 @@
           <label>RG:</label>
          </td>
          <td align="left">
-          <input type="text" name="rg"  id="rg" size="10" maxlength="15" class="inputform">
+          <input type="text" name="rg"  id="rg" size="15" maxlength="15" class="rg">
            <span class="style1">*</span></td>
          </td>
         </tr>
@@ -103,92 +106,52 @@
           <label>Data Nascimento:</label>
          </td>
          <td align="left">
-          <input type="date" name="date" size="10" id="data" class="inputform">
+          <input type="date" name="date" size="10" id="data" class="">
            <span class="style1">*</span></td>
          </td>
         </tr>
         <tr>
           <td>Sexo:</td>
-          <td><select name="estado" id="estado" class="inputform">
+          <td><select name="sexo" id="sexo" class="sexo">
             <option>Masculino</option>
             <option>Feminino</option>
+        </tr>
         <tr>
-          <td>Email:</td>
-          <td><input name="email" type="text" id="email" size="30" maxlength="60" class="inputform" placeholder=" n o m e @ d o m i n i o .com"/>
+          <td>Telefone:</td>
+          <td><input name="telefone" type="text" id="telefone" size="30" maxlength="60" class="telefone"  placeholder=" 9 - ********"/>
           <span class="style1">*</span></td>
         </tr>
         <tr>
-        <tr>
-          <td>DDD:</td>
-          <td><input name="ddd" type="number" id="ddd" size="4" maxlength="2" class="inputform" placeholder=" ex: (88)" />
-          Telefone:
-            <input name="telefone" type="number" id="telefone" class="inputform" placeholder=" 9 - ********" />
-            <span class="style3">Apenas números</span> </td>
-        </tr>
-        <tr>
-          <td>Endereço:</td>
-          <td><input name="endereco" type="text" id="endereco" size="70" maxlength="70" class="inputform" placeholder=" Seu Endereço" />
-            <span class="style1">*</span></td>
-        </tr>
-        <tr>
-          <td>Cidade:</td>
-          <td><input name="cidade" type="text" id="cidade" maxlength="20" class="inputform" placeholder=" Sua Cidade" />
-            <span class="style1">*</span></td>
-        </tr>
-        <tr>
-          <td>Estado:</td>
-          <td><select name="estado" id="estado" class="inputform">
-            <option>Selecione...</option>
-            <option value="AC">AC</option>
-            <option value="AL">AL</option>
-            <option value="AP">AP</option>
-            <option value="AM">AM</option>
-            <option value="BA">BA</option>
-            <option value="CE">CE</option>
-            <option value="ES">ES</option>
-            <option value="DF">DF</option>
-            <option value="MA">MA</option>
-            <option value="MT">MT</option>
-            <option value="MS">MS</option>
-            <option value="MG">MG</option>
-            <option value="PA">PA</option>
-            <option value="PB">PB</option>
-            <option value="PR">PR</option>
-            <option value="PE">PE</option>
-            <option value="PI">PI</option>
-            <option value="RJ">RJ</option>
-            <option value="RN">RN</option>
-            <option value="RS">RS</option>
-            <option value="RO">RO</option>
-            <option value="RR">RR</option>
-            <option value="SC">SC</option>
-            <option value="SP">SP</option>
-            <option value="SE">SE</option>
-            <option value="TO">TO</option>
-              </select>
+          <td>CEP:</td>
+          <td><input name="cep" type="numero" id="cep" maxlength="20" class="cepx" onblur="pesquisacep(this.value);" placeholder=" ** . *** - ***" />
+            <span class="style1">*</span>
           </td>
         </tr>
         <tr>
+          <td>Cidade:</td>
+          <td><input name="cidade" type="text" id="cidade" maxlength="20" class="cidade" placeholder=" Sua Cidade" />
+            <span class="style1">*</span></td>
+        </tr>
+        <tr>
+          <td>UF:</td>
+          <td><input name="uf" type="text" id="uf" maxlength="20" class="uf" placeholder=" Seu Estado" />
+            <span class="style1">*</span></td>
+        </tr>
+        <tr>
           <td>Bairro:</td>
-          <td><input name="bairro" type="text" id="bairro" maxlength="20" class="inputform" placeholder=" Seu Bairro" />
+          <td><input name="bairro" type="text" id="bairro" maxlength="20" class="bairro" placeholder=" Seu Bairro" />
             <span class="style1">*</span>
           </td>
         </tr>
         <tr>
           <td>Rua:</td>
-          <td><input name="rua" type="text" id="rua" maxlength="20" class="inputform" placeholder=" Sua Rua" />
+          <td><input name="rua" type="text" id="rua" maxlength="20" class="rua" placeholder=" Sua Rua" />
             <span class="style1">*</span>
           </td>
         </tr>
         <tr>
           <td>Numero:</td>
-          <td><input name="numero" type="numero" id="numero_casa" maxlength="20" class="inputform" placeholder=" Ex: 204" />
-            <span class="style1">*</span>
-          </td>
-        </tr>
-        <tr>
-          <td>CEP:</td>
-          <td><input name="cep" type="numero" id="cep" maxlength="20" class="inputform" placeholder=" ** . *** - ***" />
+          <td><input name="numero" type="numero" id="numero_casa" maxlength="20" class="numero" placeholder=" Ex: 204" />
             <span class="style1">*</span>
           </td>
         </tr>
@@ -203,13 +166,13 @@
     <table width="370" border="0">
         <tr>
           <td>Login:</td>
-          <td><input name="login" type="text" id="login" maxlength="12" class="inputform" placeholder=" Email@dominio.com" />
+          <td><input name="login" type="text" id="login" maxlength="20" class="email" placeholder=" Email@dominio.com" />
             <span class="style1">*</span>
           </td>
         </tr>
         <tr>
         <td>Senha:</td>
-          <td><input name="senha" type="password" id="senha" maxlength="12" class="inputform" placeholder=" ****** " />
+          <td><input name="senha" type="password" id="senha" maxlength="12" class="senha" placeholder=" ****** " />
               <span class="style1">*</span>
           </td>
         </tr>
@@ -224,15 +187,8 @@
           </td>
         </tr>
         <tr>
-          <td colspan="2"><input name="news" type="checkbox" id="news" value="ATIVO" checked="checked" />
-              Desejo receber novidades e informações sobre o conteúdo deste site. 
-          </td>
-        </tr>
-        <tr>
           <td colspan="2"><p>
             <input name="submit" type="submit" id="cadastrar" value="ENVIAR" onclick="verificarCadastro()" />
-           
-     
               <input name="limpar" type="reset" id="limpar" value="Limpar Campos preenchidos!" />
              
      
