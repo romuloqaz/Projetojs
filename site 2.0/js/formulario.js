@@ -86,4 +86,21 @@ function login(){
         login();
     }
 }
-  
+  //imagem do formulário
+$(function () {
+            $(document).on("change", ".Upload", function(e) {
+                showThumbnail(this.files);
+    });
+    
+    function showThumbnail(files) {
+        if (files && files[0]) {
+            var reader = new FileReader();
+            
+            reader.onload = function (e) {
+                $('#thumbnail').attr('src', e.target.result);
+            }
+            
+            reader.readAsDataURL(files[0]);
+        }
+    }
+});
