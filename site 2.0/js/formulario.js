@@ -71,15 +71,15 @@ function initMap() {
        
    var infoWindow = new google.maps.InfoWindow({map: map});
 
-    if (navigator.geolocation) {
+    if (navigator.geolocation) { // Pede a localização/autorização
         navigator.geolocation.getCurrentPosition(function(position) {
             var pos = {
                 lat: position.coords.latitude,
                 lng: position.coords.longitude
             };
             infoWindow.setPosition(pos);
-            infoWindow.setContent("Localização encontrada");
-            map.setCenter(pos);
+            infoWindow.setContent("Localização encontrada"); // informa se a localização foi encontrada
+            map.setCenter(pos); // mostar a localização centralizada na tela 
 
             var marker = new google.maps.Marker({ /* Adiciona um marcador no mapa e O position propriedade define a posição do marcador.*/
                 position: pos,
