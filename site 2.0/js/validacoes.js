@@ -1,28 +1,38 @@
-function validarCpf(cpf) {
-    var expReg2 = /^[0-9]{3}\.[0-9]{3}\.[0-9]{3}\-[0-9]{2} $/;
-    if(expReg2.test(cpf) != false)return true;
-    else return false;
+function validarCampos() {
+    if (document.getElementById('nome').value == "") {
+        alert("O Campo nome é obrigatório!");
+        return false;
+    }
+    if (validarCpf(document.getElementById('cpf').value) == false) {
+        alert("O Campo CPF é obrigatório!");
+        return false;
+    }
+    if (document.getElementById('rua').value == "") {
+        alert("O Campo Endereco é obrigatório!");
+        return false;
+    }
+    if (validarData(document.getElementById('data').value) == false) {
+        alert("O Campo Data de Nascimento é obrigatório!");
+        return false;
+    }
+    if (document.getElementById('bairro').value == "") {
+        alert("O Campo Bairro é obrigatório!");
+        return false;
+    }
+    if (document.getElementById('numero_casa').value == "") {
+        alert("O Campo Numero é obrigatório!");
+        return false;
+    }
+    if (validarTelefone(document.getElementById('telefone').value) == false) {
+        alert("O Campo Telefone é obrigatório!");
+        return false;
+    }
+    if (validarCep(document.getElementById('cep').value) == false) {
+        alert("O Campo CEP é obrigatório!");
+        return false;
+    }
+    if (validarRg(document.getElementById('rg').value) == false) {
+        alert("O Campo RG é obrigatório!");
+        return false;
+    }
 }
-
-function validarTelefone(telefone){
-    var expRegT = /^\([0-9]{2}\) [0-9]{4,5}\-?[0-9]{4}$/;
-    if(expRegT.test(telefone) != false)return true;
-    else return false;
-}
-
-function validarData(data) {
-    var expRegD = /^[0-9]{1,2}\/[0-9]{1,2}\/[0-9]{4}$/;
-    if(expRegD.test(data) != false)return true;
-    else return false;
-}
-
-function validarCep(cep){
-    var expRegC = /^[0-9]{5}\-?[0-9]{3}$/;
-    if(expRegC.test(data) != false)return true;
-    else return false;
-}
-
-function validarRg(rg){
-    //DISNEY WORLDS
-}
-

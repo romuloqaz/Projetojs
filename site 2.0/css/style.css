@@ -596,10 +596,13 @@ progress{
   
   
   .slides{
-      margin-left: 250px;
-     
+      margin-left: 300px;
   }
   
   .slides ul li{
       list-style-type: none;
+  }
+  .slides img{
+  	width: 750px;
+  	height: 500px;
   }
