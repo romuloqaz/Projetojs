@@ -51,11 +51,12 @@ function verificarCadastro(){
     var rg_Usuario = document.getElementById('rg').value;
     var email_Usuario = document.getElementById('email').value;
     var senha_Usuario = document.getElementById('senha').value;
-    var foto_Usuario = document.getElementById('foto_perfil').value;
+    // var foto_Usuario = document.getElementById('foto_perfil').value;
 
     // TESTA SE OS CAMPOS ESTAO PREENchidoS OU NAO
     if((nome_Usuario != "") && (cpf_Usuario!="") && (rua_Usuario!="") && (data_Nasc_Usuario!="") && (bairro_Usuario!="")&&(numero_Usuario!="")&&(telefone_Usuario!="")&&(cep_Usuario!="")&&(rg_Usuario!="")&&(email_Usuario!="")&&(senha_Usuario!="")){
         armazenarDados(email_Usuario,senha_Usuario);
+        $('form').attr("action","index.html");
     }else{
         alert("Campos necessários não foram preenchidos");
     }
